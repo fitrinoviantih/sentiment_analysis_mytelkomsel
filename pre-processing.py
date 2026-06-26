@@ -99,5 +99,5 @@ df['hasil_akhir_preprocessing'] = df['stemming'].apply(lambda x: ' '.join(x))
 df.head()
 
 # 10. Export the data result in Excel file
-df_export = df[['userName', 'score', 'at', 'hasil_akhir_preprocessing']]
+df_export = df[['USERNAME', 'SCORE', 'AT', 'hasil_akhir_preprocessing']]
 df_export.to_excel('result_preprocessing.xlsx', index=False)

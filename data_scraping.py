@@ -32,4 +32,4 @@ len (df_busu.index)
 my_df_scrape = df_busu[['userName', 'score', 'at', 'content']]
 
 # 7. Save the data result's as Excel file
-my_df_scrape.to_excel('review_mytelkomsel.xlsx', index=False)
+my_df_scrape.to_excel('RAW_data_review_mytelkomsel.xlsx', index=False)
