@@ -1,4 +1,4 @@
-# 1. Download for scraper's library from Google Play and Pandas
+# 1. Install for scraper's library from Google Play and Pandas
 # pip install google-play-scraper
 # pip install pandas
 
@@ -20,16 +20,16 @@ result, continuation_token = reviews(
 )
 print(f"Data yang berhasil ditarik: {len(result)} ulasan")
 
-# 4. Display scraping result (with top 5 rows)
+# 4. Display scraping result (showing the top 5 rows)
 df_busu = pd.DataFrame(result)
 df_busu[['userName', 'score', 'at', 'content']]
 print(df_busu.head())
 
-# 5. Display the number of scraped data records 
+# 5. Display the number of scraping data records 
 len (df_busu.index)
 
 # 6. Save the result of scraping in 4 rows
 my_df_scrape = df_busu[['userName', 'score', 'at', 'content']]
 
-# 7. Save the data result's as Excel files
-my_df_scrape.to_excel('review_mytelkomsel_ulang.xlsx', index=False)
+# 7. Save the data result's as Excel file
+my_df_scrape.to_excel('review_mytelkomsel.xlsx', index=False)
