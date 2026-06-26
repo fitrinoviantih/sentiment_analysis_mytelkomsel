@@ -100,4 +100,4 @@ df.head()
 
 # 10. Export the data result in Excel file
 df_export = df[['USERNAME', 'SCORE', 'AT', 'hasil_akhir_preprocessing']]
-df_export.to_excel('result_preprocessing.xlsx', index=False)
+df_export.to_excel('data_setelah_preprocessing.xlsx', index=False)

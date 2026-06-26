@@ -3,12 +3,12 @@
 # 2. Import the Pandas library
 import pandas as pd
 
-# 3. load the lexicon InSet
+# 3. Load the lexicon InSet
 pos_dict = pd.read_csv(r"/content/positive.tsv", sep='\t', names=['word', 'score'])
 neg_dict = pd.read_csv(r"/content/negative.tsv", sep='\t', names=['word', 'score'])
 
 # 4. Load the Excel file
-df = pd.read_excel(r"/content/for_lexicon_preprocessing_mytelkomsel.xlsx")
+df = pd.read_excel(r"content/data_setelah_preprocessing_mytelkomsel.xlsx")
 
 # 5. Convert the score to a number (preventing a TypeError)
 pos_dict['score'] = pd.to_numeric(pos_dict['score'], errors='coerce').fillna(0)
